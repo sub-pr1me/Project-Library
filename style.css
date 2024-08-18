@@ -1,0 +1,190 @@
+:root{
+    background-color: #212133;
+    color: rgb(192, 192, 192)
+}
+
+* {
+    /* outline: green 1px solid; */
+    font-family: system-ui, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 0px;
+    display: grid;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+form,
+.section,
+.header,
+.footer,
+ul,
+li,
+.add_btn {
+    display: grid;    
+    justify-content: center;
+    align-content: center;
+}
+
+#lib {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
+    gap: 20px;
+}
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    gap: 5px;
+    background-color: #1b1b31;
+    box-shadow: 0px 0px 10px 1px rgba(171, 164, 255, 0.212);
+    border-bottom: #9ac1da3b 1px solid;
+    border-radius: 50px;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.text {
+    color: #85d3dd;
+    /* background-color: #9ac1da49; */
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text:hover {
+    color: #ffbc90;
+}
+
+.erase,
+.change {
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(214, 214, 214);
+    background-color: rgb(124, 21, 21);
+}
+
+.erase:hover,
+.change:hover,
+.add_btn button:hover,
+.footer button:hover {
+    color: rgb(255, 226, 96);
+}
+
+.change {
+    background-color: #4a40a5;
+}
+
+.header,
+.footer,
+.add_btn {
+    height: 75px;
+    justify-content: center;
+    margin: 10px;
+}
+
+.header {
+    font-weight: 700;
+}
+
+form {
+    gap: 30px;
+}
+
+#lib,
+form div {
+    font-size: 22px;
+}
+
+ul {
+    display: grid;
+    padding: 0px;
+    gap: 5px;
+}
+
+li {
+    justify-content: left;
+    grid-auto-flow: column;
+    gap: 5px;
+}
+
+input {
+    height: 24px;
+    background-color: #9ac2da;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.add_btn button {
+    height: 80px;
+    width: 250px;
+    color: rgb(214, 214, 214);
+    background-color: rgb(44, 92, 148);
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.footer {
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+.footer button {
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(214, 214, 214);
+    background-color: rgb(124, 21, 21);
+}
+
+button[type*='submit'] {
+    background-color: rgb(44, 92, 148);
+}
+
+.section {
+    width: 500px;
+    height: 50px;
+    gap: 2px;
+}
+
+.section > * {
+    width: 250px;
+}
+
+dialog,
+input,
+button {
+    border-radius: 10px;
+}
+
+dialog {
+    background-color: #1a1a30;
+    color: rgb(214, 214, 214);
+    padding: 0px;
+    border: none;
+    box-shadow: 0px 0px 10px 1px rgba(181, 255, 255, 0.247);
+}
+
+dialog::backdrop {
+    background-color: rgba(78, 89, 100, 0.322);
+}
+
+label {
+    font-size: 20px;
+}
