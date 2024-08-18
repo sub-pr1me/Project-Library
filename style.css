@@ -1,6 +1,6 @@
 :root{
     background-color: #212133;
-    color: rgb(192, 192, 192)
+    color: rgb(192, 192, 192);
 }
 
 * {
@@ -38,6 +38,7 @@ li,
     height: fit-content;
     grid-template-columns: repeat(auto-fit, minmax(40ch, 1fr));
     gap: 20px;
+    padding: 10px;
 }
 
 .entry {
