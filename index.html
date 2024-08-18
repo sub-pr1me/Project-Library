@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <ul id="lib"></ul>
+        <div class="add_btn"><button>+ Add Movie</button></div>
+        <dialog id="dialog">
+            <div class="wrapper">
+                <form class="form">
+                    <div class="header">Please provide the info about the movie:</div>
+                    <div class="section">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title" required>
+                    </div>
+                    <div class="section">
+                        <label for="director">Director</label>
+                        <input type="text" id="director" name="director" required>
+                    </div>
+                    <div class="section">
+                        <label for="year">Year</label>
+                        <input type="text" id="year" name="year" required>
+                    </div>
+                    <div class="section">
+                        <ul style="list-style: none;">
+                            <li>
+                                <input type="radio" id="watched" name="watched" value="Watched" required>
+                                <label for="watched">Watched</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="not_watched" name="watched" value="Not watched" required>
+                                <label for="not_watched">Didn't watch</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer">
+                        <button type="button" class="close_btn">CANCEL</button>
+                        <button type="submit" data-dismiss="modal">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
+        </dialog>
+    </div>
+</body>
+</html>
