@@ -1,6 +1,6 @@
 :root{
     background-color: #212133;
-    color: rgb(192, 192, 192);
+    color: rgb(255, 224, 121);
 }
 
 * {
@@ -11,6 +11,11 @@
 body {
     margin: 0px;
     display: grid;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
 }
 
 .container {
@@ -52,6 +57,7 @@ li,
     box-shadow: 0px 0px 10px 1px rgba(171, 164, 255, 0.212);
     border-bottom: #9ac1da3b 1px solid;
     border-radius: 50px;
+    transition: transform 0.2s;
 }
 
 .btns {
@@ -84,7 +90,12 @@ li,
 .change:hover,
 .add_btn button:hover,
 .footer button:hover {
-    color: rgb(255, 226, 96);
+    color: rgb(255, 224, 121);
+}
+
+.add_btn button:hover,
+.entry:hover {
+    transform: scale(1.03);
 }
 
 .change {
@@ -138,6 +149,7 @@ input {
     background-color: rgb(44, 92, 148);
     font-size: 36px;
     font-weight: 700;
+    transition: transform 0.2s;
 }
 
 .footer {
