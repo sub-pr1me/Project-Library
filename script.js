@@ -2,20 +2,23 @@
 const myLibrary = [];
 
 /// OBJECT CONSTRUCTOR
-function Movie(title, director, year, watched) {
-    this.title = title;
-    this.director = director;
-    this.year = year;
-    this.watched = watched;
-};
-Movie.prototype.info = function() {
+class Movie {
+    constructor(title, director, year, watched) {
+        this.title = title
+        this.director = director
+        this.year = year
+        this.watched = watched
+    }    
+
+    info() {
     return `"${this.title}" (${this.year}) by ${this.director} | ${this.watched}`;
-};
-Movie.prototype.toWatched = function() {
+    }
+    toWatched() {
     return `"${this.title}" (${this.year}) by ${this.director} | Watched`;
-};
-Movie.prototype.toUnwatched = function() {
+    }
+    toUnwatched() {
     return `"${this.title}" (${this.year}) by ${this.director} | Not watched`;
+    }
 };
 
 /// FORM DIALOG DISPLAY
@@ -60,7 +63,6 @@ form.addEventListener('submit', (e) => {
     let myForm = document.querySelector('.form');
     myForm.reset();  
     addEntry();
-    console.log(myLibrary);
 });
 
 /// LIBRARY DISPLAY
